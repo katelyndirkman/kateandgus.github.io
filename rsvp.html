@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+        <meta charset="utf-8">
+        <title> RSVP </title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- ICONSCOUT CSS -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    </head>
+    <body id="rsvp">
+       <div class="container">
+           <header>RSVP</header>
+            
+            <form action="#">
+                <!--PAGE 1 -->
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Adult Guest 1</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Enter last name" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>RSVP</label>
+                                <select required="required" id="attend" name="attend">
+                                    <option disabled selected value> -- select an option -- </option>
+                                    <option value="yes">I will be attending</option>
+                                    <option value="no">I will not be able to attend</option>
+                                    </select>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="details ID">
+                        <span class="title">Adult Guest 2</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Enter first name" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Enter last name" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>RSVP</label>
+                                <select id="attend" name="attend" required>
+                                    <option disabled selected value> -- select an option -- </option>
+                                    <option value="yes">I will be attending</option>
+                                    <option value="no">I will not be able to attend</option>
+                                 </select>
+                            </div>
+                        </div>
+                            
+                    </div>
+                    
+                    <div class="details guests">
+                        <span class="title">How many total guests are in your group?</span>
+                        <div class="fields">
+                            <div class="input-field field1">
+                                <label>First Name</label>
+                                <input type="number" placeholder="Enter TOTAL guests" >
+                            </div>
+                            <div class="input-field field2">
+                                <label>Additional Guest Names</label>
+                                <input type="text" placeholder="Enter names" >
+                            </div>
+                        </div>
+                    </div>
+
+                        <button class="nextBtn">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    
+
+                </div>
+                <!--PAGE 2 -->
+
+                <div class="form second">
+                    <div class="details address">
+                        <span class="title">Mailing Address</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Address Type</label>
+                                <input type="text" placeholder="Enter full name" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Street Address</label>
+                                <input type="text" placeholder="Enter street address" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>City</label>
+                                <input type="text" placeholder="Enter city" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>State</label>
+                                <input type="text" placeholder="Enter state" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Zip Code</label>
+                                <input type="number" placeholder="Enter zip code" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Ward Number</label>
+                                <input type="text" placeholder="Enter country" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details family">
+                        <span class="title">Additional Information (optional)</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Any food allergies? <label>
+                                <input type="text" placeholder="Enter food allergies">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Song Suggestion?</label>
+                                <input type="text" placeholder="Enter song suggestions" >
+                            </div>
+
+                            <div class="input-field">
+                                <label>Anything else?</label>
+                                <input type="text" placeholder="additonal info/note" >
+                            </div>
+
+                            
+                        </div>
+
+                       <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                            
+                        </div>
+                        
+                        <button class="submit">
+                            <span class="submitTxt">Submit</span>
+                        </button>
+
+                       </div>
+                    </div>
+
+                </div>
+                 <!--PAGE 3 -->
+                <div class="form three">
+                    <div class="thank-you">
+                       <img src="icons/checkmark.png">
+                       <h2 class="thx-message">Thanks for your response!</h2>
+                    </div>
+                        
+                        <button class="homeBtn">
+                            <span class="homeBtnText">Return Home</span>
+                        </button>
+                    
+                </div>
+                <!--Page Submit End-->
+
+            </form>
+        </div>
+        <script src="js/rsvp.js"></script>
+
+     </body>
+     </html>

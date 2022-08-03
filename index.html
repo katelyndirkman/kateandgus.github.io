@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+		 <meta charset="utf-8">
+		 <!-- meta data description? -->
+		 <meta name="description" content="wedding -description of website?">
+
+		 <title> Gus and Kate</title>
+		 <link rel="stylesheet" href="css/styles.css">
+		 
+		 <!-- NOT WORKING -- JQuery library from JavasScript use CDN so you don't have to download/host JQuery -->
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+	 </head>
+	 <body id="index">
+		 <!-- this is a comment -->
+		
+		
+   	<div class="container1"> 
+   	<header class="site-header">
+		
+		 <nav class="main-nav" id="main-nav">
+			<div class="logo">
+				<h1 class="lul"><a href="index.html">Gustavo and Katelyn</a></h1>
+			</div>
+			 <ul class="navv">
+				 <li><a href="index.html" class="active">Home</a></li>
+				 <li><a href="about.html">About</a></li>
+				 <li><a href="info.html">Info</a></li>
+				 <li><a href="login.html">RSVP</a></li>
+				 <li><a href="registry.html">Registry</a></li>
+				 <li><a class="cart-icon" alt= "" href="cart.html"><img src="cart.png"></a></li>
+			 </ul>
+
+		</nav>
+	</header>
+</div>
+		 <!-- end of header and main nav content -->
+
+		 <!-- start of billboard / main home page -->
+
+
+		 <main>
+
+			<!-- COUNTDOWN -->
+			<div class="countdown">
+				<div class="launch">
+					<div>
+						<p id="days">00</p>
+						<span>DAYS</span>
+					</div>
+					<div>
+						<p id="hours">00</p>
+						<span>HOURS</span>
+					</div>
+					<div>
+						<p id="minutes">00</p>
+						<span>MINUTES</span>
+					</div>
+					<div>
+						<p id="seconds">00</p>
+						<span>SECONDS</span>
+					</div>
+				</div>
+			
+			<script>
+				var countDownDate = new Date("May 1, 2023 00:00:00").getTime();
+				var x = setInterval(function(){
+					var now = new Date().getTime();
+					var distance = countDownDate - now;
+
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					document.getElementById("days").innerHTML = days;
+					document.getElementById("hours").innerHTML = hours;
+					document.getElementById("minutes").innerHTML = minutes;
+					document.getElementById("seconds").innerHTML = seconds;
+
+					if(distance < 0){
+						clearInterval(x);
+						document.getElementById("days").innerHTML = "00";
+						document.getElementById("hours").innerHTML = "00";
+						document.getElementById("minutes").innerHTML = "00";
+						document.getElementById("seconds").innerHTML = "00";
+					}
+				}, 1000);
+
+			</script>
+			</div>
+
+			<!-- END OF COUNTDOWN -->
+
+
+			<!-- start of bottom columns -->
+
+			 
+
+	 <!-- start of footer content -->
+
+		 <footer id="footer" class="site-footer clearfix">
+			 <p class="copyright">
+				 Gus & Kate &copy; 2022
+			 </p>
+			 <ul class="footer-nav clearfix">
+				 <li><a href="/">Home</a></li>
+				 <li><a href="/about.html">About</a></li>
+			 </ul>
+		 </footer>
+		 <script src="js/nav.js"></script>
+	 </body>
+</html>

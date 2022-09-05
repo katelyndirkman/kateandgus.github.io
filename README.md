@@ -1,1 +1,1 @@
-# kateandgus.github.io
+# wedding.github.io

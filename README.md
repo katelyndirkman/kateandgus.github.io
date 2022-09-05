@@ -7,6 +7,7 @@
 - [Contacts](#contacts)
 
 ## Description
+A wedding website built to display all information relating to event, an RSVP password protected form, and registry shopping cart.
 
 ## Screenshots
 
